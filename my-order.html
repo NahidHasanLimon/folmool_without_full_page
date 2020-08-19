@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/25ed0a4e62.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Folmool Cart</title>
+  </head>
+  <body>
+    <section class="menu-bar fixed-top" id="menuBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 pl-4">
+            <img src="./resources/folmool-logo.png" alt="" />
+          </div>
+          <div class="col-8 d-flex justify-content-end pt-2">
+            <ul>
+              <li><img src="./resources/person.png" alt="" /></li>
+              <li><i class="fas fa-shopping-bag"></i></li>
+              <li><i class="fas fa-bars" onclick="dropMenu()"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-container" id="menu">
+      <div class="row">
+        <div class="col-2 ml-auto mt-5" onclick="crossMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="menu-content">
+        <a href="./index.html">Home</a>
+        <a href="">About Us</a>
+        <a href="./all-product.html">Store</a>
+        <a href="./my-order.html">My Orders</a>
+        <a href="">My Favorite</a>
+        <a href="">Contact Us</a>
+      </div>
+    </section>
+
+    <section class="indicator">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 m-auto">
+            <div class="row">
+              <div class="col-12 col-md-5 text-center box mr-auto">
+                <div class="circle m-auto pt-2">
+                  <h4>1</h4>
+                </div>
+                <div class="mt-4">
+                  <h4>SHOPPING CART</h4>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5 col-5 text-center box">
+                <div class="circle-1 m-auto pt-2">
+                  <h4>2</h4>
+                </div>
+                <div class="mt-4">
+                  <h4>DELIVERY AND PAYMENT</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cart-head">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 m-auto cart-list">
+            <div class="row d-flex align-items-center">
+              <div class="col-3 col-lg-3 text-center">
+                <h6>ITEM</h6>
+              </div>
+              <div class="d-none d-lg-block d-xl-block col-lg-1 text-center">
+                <h6>PRICE</h6>
+              </div>
+              <div class="col-2 col-lg-1 text-center">
+                <h6>BUNDLE</h6>
+              </div>
+              <div class="col-3 col-lg-3 text-center">
+                <h6>QTY</h6>
+              </div>
+              <div class="col-3 col-lg-2 offset-col-2 text-center">
+                <h6>TOTAL PRICE</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="cart">
+      <div class="container">
+        <div class="row">
+          <div class="col-11 col-md-12 m-auto item-list">
+            <div class="row cart-item">
+              <div class="col-3 col-lg-3 sec-one text-center">
+                <img src="./resources/gopalvog.png" alt="" />
+                <h5>Gopalbhog</h5>
+              </div>
+
+              <div class="col-lg-1 sec-three d-none d-lg-block d-xl-block">
+                <h5><span class="m-unit">50</span>&nbspBDT</h5>
+              </div>
+
+              <div class="col-1 col-lg-1 bundle text-center">
+                <h5><span>10</span> kg</h5>
+              </div>
+
+              <div class="col-4 col-lg-3 sec-four">
+                <button class="default-button m-minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control text-center cart-quantity-input"
+                  value="1"
+                  min="0"
+                />
+                <button class="default-button m-plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-2 sec-five">
+                <h5><span class="m-amount">50</span>&nbspBDT</h5>
+              </div>
+              <div class="col-1 col-lg-2 sec-six delete-button">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+
+            <div class="row cart-item">
+              <div class="col-3 col-lg-3 sec-one text-center">
+                <img src="./resources/himsagor.png" alt="" />
+                <h5>Himsagor</h5>
+              </div>
+
+              <div class="col-lg-1 sec-three d-none d-lg-block d-xl-block">
+                <h5><span class="m-unit">50</span>&nbspBDT</h5>
+              </div>
+
+              <div class="col-1 col-lg-1 bundle text-center">
+                <h5><span>10</span> kg</h5>
+              </div>
+
+              <div class="col-4 col-lg-3 sec-four">
+                <button class="default-button m-minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control text-center cart-quantity-input"
+                  value="1"
+                  min="0"
+                />
+                <button class="default-button m-plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-2 sec-five">
+                <h5><span class="m-amount">50</span>&nbspBDT</h5>
+              </div>
+              <div class="col-1 col-lg-2 sec-six delete-button">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+
+            <div class="row cart-item">
+              <div class="col-3 col-lg-3 sec-one text-center">
+                <img src="./resources/gopalvog.png" alt="" />
+                <h5>Gopalbhog</h5>
+              </div>
+
+              <div class="col-lg-1 sec-three d-none d-lg-block d-xl-block">
+                <h5><span class="m-unit">50</span>&nbspBDT</h5>
+              </div>
+
+              <div class="col-1 col-lg-1 bundle text-center">
+                <h5><span>10</span> kg</h5>
+              </div>
+
+              <div class="col-4 col-lg-3 sec-four">
+                <button class="default-button m-minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control text-center cart-quantity-input"
+                  value="1"
+                  min="0"
+                />
+                <button class="default-button m-plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-2 sec-five">
+                <h5><span class="m-amount">50</span>&nbspBDT</h5>
+              </div>
+              <div class="col-1 col-lg-2 sec-six delete-button">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+
+            <div class="row cart-item">
+              <div class="col-3 col-lg-3 sec-one text-center">
+                <img src="./resources/himsagor.png" alt="" />
+                <h5>Himsagor</h5>
+              </div>
+
+              <div class="col-lg-1 sec-three d-none d-lg-block d-xl-block">
+                <h5><span class="m-unit">50</span>&nbspBDT</h5>
+              </div>
+
+              <div class="col-1 col-lg-1 bundle text-center">
+                <h5><span>10</span> kg</h5>
+              </div>
+
+              <div class="col-4 col-lg-3 sec-four">
+                <button class="default-button m-minus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control text-center cart-quantity-input"
+                  value="1"
+                  min="0"
+                />
+                <button class="default-button m-plus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-2 col-lg-2 sec-five">
+                <h5><span class="m-amount">50</span>&nbspBDT</h5>
+              </div>
+              <div class="col-1 col-lg-2 sec-six delete-button">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-11 col-md-12 m-auto">
+            <div class="row sub-total">
+              <div class="col-6 col-md-3 coupon-sec-one">
+                <input type="text" placeholder="code" />
+              </div>
+              <div class="col-6 col-md-3 coupon-sec-two text-center">
+                <button>APPLY CODE</button>
+              </div>
+              <div class="col-6 col-md-3 sub-total-sec-one">
+                <h5>Subtotal:</h5>
+                <h5>Delivery Charge:</h5>
+                <h5>Total:</h5>
+              </div>
+              <div class="col-6 col-md-3 sub-total-sec-two text-right">
+                <h5><span class="s-total">0</span>&nbsp BDT</h5>
+                <h5><span>0</span>&nbsp BDT</h5>
+                <h5><span class="total">0</span>&nbsp BDT</h5>
+              </div>
+
+              <div
+                class="col-12 col-md-6 d-flex justify-content-center ml-auto mt-5"
+              >
+                <a
+                  class="add-cart-button roll-over"
+                  href="Delivery-Payment.html"
+                >
+                  <span class="roll-text">CHECKOUT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script1.js"></script>
+    <script src="./js/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

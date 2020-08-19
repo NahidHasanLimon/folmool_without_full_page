@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/25ed0a4e62.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>FOLMOOL HOME</title>
+  </head>
+  <body>
+    <section class="menu-bar fixed-top" id="menuBar">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 pl-4">
+            <img src="./resources/folmool-logo.png" alt="" />
+          </div>
+          <div class="col-8 d-flex justify-content-end pt-2">
+            <ul>
+              <li><img src="./resources/person.png" alt="" /></li>
+              <li><i class="fas fa-shopping-bag"></i></li>
+              <li><i class="fas fa-bars" onclick="dropMenu()"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-container" id="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 ml-auto mt-5" onclick="crossMenu()">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="menu-content">
+          <a href="./index.html">Home</a>
+          <a href="">About Us</a>
+          <a href="./all-product.html">Store</a>
+          <a href="./my-order.html">My Orders</a>
+          <a href="">My Favorite</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="folmool-banner-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./resources/banner-1a.png" class="img-fluid" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./resources/banner-1b.png" class="img-fluid" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./resources/banner-1c.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+
+              <!-- If we need navigation buttons -->
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="folmool-banner-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 text-center">
+            <div class="row">
+              <div class="col-6">
+                <img src="./resources/product-1.png" class="img-fluid" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="./resources/product-2.png" class="img-fluid" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img src="./resources/banner-2.png" class="img-fluid" alt="" />
+            <h1>I IMPROVE YOUR IMMUNE SYSTEM</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="folmool-banner-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6 text-center">
+                <img src="./resources/product-3.png" class="img-fluid" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+              <div class="col-6 text-center">
+                <img src="./resources/product-4.png" class="img-fluid" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img src="./resources/banner-3.png" class="img-fluid" alt="" />
+            <h1>I REDUCE YOUR STRESS</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="folmool-banner-four">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>MANGO</h1>
+          </div>
+
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>Himsagor</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>10 KG</td>
+                    <td>1200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>20 KG</td>
+                    <td>2000 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>40 KG</td>
+                    <td>3500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>Amropali</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>10 KG</td>
+                    <td>1200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>20 KG</td>
+                    <td>2000 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>40 KG</td>
+                    <td>3500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>Himsagor</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>10 KG</td>
+                    <td>1200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>20 KG</td>
+                    <td>2000 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>40 KG</td>
+                    <td>3500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>Amropali</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>10 KG</td>
+                    <td>1200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>20 KG</td>
+                    <td>2000 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>40 KG</td>
+                    <td>3500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 stage">
+            <a href="#">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="folmool-banner-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>LYCHEE</h1>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>China</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>100 PCS</td>
+                    <td>200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>200 PCS</td>
+                    <td>300 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>400 PCS</td>
+                    <td>500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>Bombay</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>100 PCS</td>
+                    <td>200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>200 PCS</td>
+                    <td>300 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>400 PCS</td>
+                    <td>500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>China</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>100 PCS</td>
+                    <td>200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>200 PCS</td>
+                    <td>300 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>400 PCS</td>
+                    <td>500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-6 col-md-3 mt-5 text-center">
+                <h5>Bombay</h5>
+                <table class="table table-borderless text-center mt-2">
+                  <tr>
+                    <td>100 PCS</td>
+                    <td>200 BDT</td>
+                  </tr>
+
+                  <tr>
+                    <td>200 PCS</td>
+                    <td>300 BDT</td>
+                  </tr>
+                  <tr>
+                    <td>400 PCS</td>
+                    <td>500 BDT</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 stage">
+            <a href="#">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="folmool-banner-six text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img src="./resources/footer-banner.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-3 ">
+                  <h6>FOLMOOL.COM</h6>
+                  <p>Address: Road 4, House 87-89,
+                    Niketan 1212
+                  </p>
+                  <h6>Phone: 01959-609665</h6>
+            </div>
+            <div class="col-3 d-flex justify-content-around align-items-center">
+              <div class="round d-flex align-items-center justify-content-center fb"><i class="fab fa-facebook-square"></i></div>
+              <div class="round d-flex align-items-center justify-content-center insta"><i class="fab fa-instagram"></i></div>
+              <div class="round d-flex align-items-center justify-content-center whatsapp"><i class="fab fa-whatsapp"></i></div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/script2.js"></script>
+    <script src="./js/script4.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

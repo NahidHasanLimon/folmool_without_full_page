@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Folmool Delivery</title>
+  </head>
+  <body>
+    <section class="menu-bar fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 pl-4">
+            <img src="./resources/folmool-logo.png" alt="" />
+          </div>
+          <div class="col-8 d-flex justify-content-end pt-2">
+            <ul>
+              <li><img src="./resources/person.png" alt="" /></li>
+              <li><i class="fas fa-shopping-bag"></i></li>
+              <li><i class="fas fa-bars" onclick="dropMenu()"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-container" id="menu">
+      <div class="row">
+        <div class="col-2 ml-auto mt-5" onclick="crossMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="menu-content">
+        <a href="index.html">Home</a>
+        <a href="">About Us</a>
+        <a href="./all-product.html">Store</a>
+        <a href="./my-order.html">My Orders</a>
+        <a href="">My Favorite</a>
+        <a href="">Contact Us</a>
+      </div>
+    </section>
+
+    <div class="sidebar">
+      <ul>
+        <li>
+          <i class="fas fa-border-all"></i>
+          <a id="all" class="category-item" href="#mango">All Products</a>
+        </li>
+
+        <li>
+          <i class="far fa-file"></i>
+          <a id="mango" class="category-item" href="#mango">Mango</a>
+        </li>
+
+        <li>
+          <i class="far fa-file"></i>
+          <a id="lychee" class="category-item" href="#lychee">Lychee</a>
+        </li>
+
+        <li>
+          <i class="far fa-file"></i>
+          <a id="orange" class="category-item" href="#orange">Orange</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-second">
+      <a id="all" class="category-item" href="#mango">All Products</a>
+      <a id="mango" class="category-item" href="#mango">Mango</a>
+      <a id="lychee" class="category-item" href="#lychee">Lychee</a>
+      <a id="orange" class="category-item" href="#orange">Orange</a>
+    </div>
+
+    <div class="product-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row text-center">
+              <div class="col-6 col-lg-4 col-xl-3 item mango">
+                <img src="./resources/product-1.png" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4 col-xl-3 item mango">
+                <img src="./resources/product-2.png" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 col-xl-3 item lychee">
+                <img src="./resources/product-3.png" alt="" />
+                <div class="text-center">
+                  <h3>Bombay</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 col-xl-3 item lychee">
+                <img src="./resources/product-4.png" alt="" />
+                <div class="text-center">
+                  <h3>China</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 col-xl-3 item mango">
+                <img src="./resources/product-1.png" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 col-xl-3 item mango">
+                <img src="./resources/product-2.png" alt="" />
+                <div class="text-center">
+                  <h3>Himsagor</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 col-xl-3 item lychee">
+                <img src="./resources/product-3.png" alt="" />
+                <div class="text-center">
+                  <h3>Bombay</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 col-xl-3 item lychee">
+                <img src="./resources/product-4.png" alt="" />
+                <div class="text-center">
+                  <h3>china</h3>
+                  <h3>Price:1200</h3>
+                  <div class="select m-auto">
+                    <select name="slct">
+                      <option selected value="1">10kg</option>
+                      <option value="2">20kg</option>
+                      <option value="3">30kg</option>
+                    </select>
+                  </div>
+                  <a href=""><button>Add to Basket</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./js/script2.js"></script>
+    <script src="./js/script3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

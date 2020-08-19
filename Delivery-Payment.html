@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Folmool Delivery</title>
+  </head>
+  <body>
+    <section class="menu-bar fixed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 pl-4">
+            <img src="./resources/folmool-logo.png" alt="" />
+          </div>
+          <div class="col-8 d-flex justify-content-end pt-2">
+            <ul>
+              <li><img src="./resources/person.png" alt="" /></li>
+              <li><i class="fas fa-shopping-bag"></i></li>
+              <li><i class="fas fa-bars" onclick="dropMenu()"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-container" id="menu">
+      <div class="row">
+        <div class="col-2 ml-auto mt-5" onclick="crossMenu()">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="menu-content">
+        <a href="index.html">Home</a>
+        <a href="">About Us</a>
+        <a href="./all-product.html">Store</a>
+        <a href="./my-order.html">My Orders</a>
+        <a href="">My Favorite</a>
+        <a href="">Contact Us</a>
+      </div>
+    </section>
+    <section class="indicator">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 m-auto">
+            <div class="row">
+              <div class="col-12 col-md-5 text-center box mr-auto">
+                <div class="circle-1 m-auto pt-2">
+                  <h4>1</h4>
+                </div>
+                <div class="mt-4">
+                  <h4>SHOPPING CART</h4>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5 col-5 text-center box">
+                <div class="circle m-auto pt-2">
+                  <h4>2</h4>
+                </div>
+                <div class="mt-4">
+                  <h4>DELIVERY AND PAYMENT</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="delivery">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="billing-address">
+              <div class="row">
+                <div class="col-12">
+                  <h2>Billing Address</h2>
+                  <div class="address mt-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <h5>Address</h5>
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          placeholder="Enter your street address.."
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          placeholder="Enter the apartment,floor,suite etc"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="town">
+                    <h5>Town/City*</h5>
+                    <input
+                      type="text"
+                      placeholder="Enter your street address.."
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div class="country-post">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="country">
+                          <h5>Country*</h5>
+                          <input
+                            type="text"
+                            placeholder="Enter your country.."
+                            name=""
+                            id=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="post">
+                          <h5>Post Code*</h5>
+                          <input
+                            type="text"
+                            placeholder="Enter your post code.."
+                            name=""
+                            id=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="your-order">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="mb-4">Your Order</h2>
+
+                  <table class="table table-borderless mt-4">
+                    <tr>
+                      <th>PRODUCTS NAME</th>
+                      <th>BUNDLE</th>
+                      <th>QTY</th>
+                      <th>SUBTOTAL</th>
+                    </tr>
+                    <tr>
+                      <td>Gopalbhog</td>
+                      <td>40kg</td>
+                      <td>1</td>
+                      <td>1200 BDT</td>
+                    </tr>
+                    <tr>
+                      <td>Himsagor</td>
+                      <td>20kg</td>
+                      <td>2</td>
+                      <td>1200 BDT</td>
+                    </tr>
+                  </table>
+
+                  <div class="total">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="left text-center">
+                          <h4>Cart Subtotal</h4>
+                          <h4>Tax</h4>
+                          <h4>Order Total</h4>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="right text-center">
+                          <h4>2400 BDT</h4>
+                          <h4>0 BDT</h4>
+                          <h4>2400 BDT</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 ml-auto">
+            <div class="payment-method">
+              <h2 class="text-center">Payment Method</h2>
+              <div class="row mt-5 mb-5 payment-box">
+                <div class="col-12 col-md-4 pl-5">
+                  <input
+                    type="radio"
+                    id="cash"
+                    name="payment"
+                    value="cheque"
+                    onclick="if(this.checked){paymentFunction()}"
+                  />
+                  <label for="cash">CASH IN DELIVERY</label><br />
+                  <input
+                    id="cash-input"
+                    type="text"
+                    style="display: none;"
+                  /><br />
+                </div>
+
+                <div class="col-12 col-md-4 pl-5">
+                  <input
+                    type="radio"
+                    id="paypal"
+                    name="payment"
+                    value="payment"
+                    onclick="if(this.checked){paymentFunction()}"
+                  />
+                  <label for="paypal">PAYPAL</label><br />
+                  <input
+                    id="paypal-input"
+                    type="text"
+                    style="display: none;"
+                  /><br />
+                </div>
+
+                <div class="col-12 col-md-4 pl-5">
+                  <input
+                    type="radio"
+                    id="bkash"
+                    name="payment"
+                    value="bkash"
+                    onclick="if(this.checked){paymentFunction()}"
+                  />
+                  <label for="bkash">BKASH</label>
+                  <input
+                    id="bkash-input"
+                    type="text"
+                    style="display: none;"
+                  /><br />
+                </div>
+              </div>
+
+              <div class="place-order text-center">
+                <button>
+                  <a href="">
+                    PLACE ORDER
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
